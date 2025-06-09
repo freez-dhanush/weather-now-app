@@ -102,8 +102,7 @@ document.getElementById("geo-btn").addEventListener("click", function () {
   }
 });
 
-const apiKey = process.env.WEATHER_API_KEY || ''; // Your OpenWeatherMap API key
-
+const apiKey = WEATHER_API_KEY;
 document.getElementById("search-btn").addEventListener("click", () => getWeather());
 
 document.getElementById("city-input").addEventListener("input", function() {
