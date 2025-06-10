@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Weather Report</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Weather Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img id="weather-bg" src="" alt="" />
-  <div class="weather-container" id="weather-container">
-    <h2>Weather Report</h2>
-    <div class="input-group">
-      <span id="input-weather-icon" class="input-icon"></span>
-      <input type="text" id="city-input" placeholder="Enter city name" autocomplete="off">
-      <button id="search-btn">Get Weather</button>
-      <button id="geo-btn" title="Use my location">📍</button>
+    <img id="weather-bg" src="" alt="" />
+    <div class="weather-container" id="weather-container">
+        <h2>Weather Report</h2>
+        <div class="input-group">
+            <span id="input-weather-icon" class="input-icon"></span>
+            <input type="text" id="city-input" placeholder="Enter city name" autocomplete="off">
+            <button id="search-btn">Get Weather</button>
+            <button id="geo-btn" title="Use my location">📍</button>
+        </div>
+        <div class="unit-toggle-row">
+            <label class="unit-toggle">
+                <input type="checkbox" id="unit-toggle" />
+                <span id="unit-label">°C</span>
+            </label>
+        </div>
+        <div id="weather-result"></div>
+        <div id="forecast-result"></div>
+        <div id="suggestion" class="suggestion-text">
+            <span id="suggestion-message" class="suggestion-message"></span>
+        </div>
     </div>
-    <div class="unit-toggle-row">
-      <label class="unit-toggle">
-        <input type="checkbox" id="unit-toggle" />
-        <span id="unit-label">°C</span>
-      </label>
-    </div>
-    <div id="weather-result"></div>
-    <div id="forecast-result"></div>
-    <div id="suggestion" class="suggestion-text">
-      <span id="suggestion-message" class="suggestion-message"></span>
-    </div>
-  </div>
-  <script src="config.js"></script>
-  <script src="script.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
