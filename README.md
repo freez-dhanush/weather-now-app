@@ -26,8 +26,10 @@ A sleek and interactive weather application that provides real-time weather info
 
 ## Screenshots 📸
 
+![Screenshot 2025-06-09 233555](https://github.com/user-attachments/assets/33598e5c-69c9-409a-af2b-a3baa0443981)
 ![Weather App - Clear Sky](images/clear.jpg)
 ![Weather App - Rainy](images/rain.jpg)
+
 
 ## API Integration 🔑
 
