@@ -102,7 +102,7 @@ document.getElementById("geo-btn").addEventListener("click", function () {
   }
 });
 
-const apiKey = WEATHER_API_KEY;
+const apiKey = process.env.WEATHER_API_KEY;
 document.getElementById("search-btn").addEventListener("click", () => getWeather());
 
 document.getElementById("city-input").addEventListener("input", function() {
@@ -162,8 +162,7 @@ async function fetchWeatherData(params, opts = {}) {
   if (params.lat && params.lon) query.push(`lat=${params.lat}&lon=${params.lon}`);
   query.push("appid=" + apiKey);
   query.push("units=" + currentUnit);
-  let url = `https://api.openweathermap.org/data/2.5/weather?${query.join("&")}`;
-
+  let url = `/.netlify/functions/weather?${query.join("&")}`;
   try {
     const response = await fetch(url);
     const data = await response.json();
